@@ -254,7 +254,7 @@ p {
 
 @media screen and (max-width: 700px) {
     .home-pic {
-        top: 25vh;
+        top: 24vh;
         background-image: url("pmmobilemob1601608862.png");
         z-index: -1 ;
     }
