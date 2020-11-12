@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headerpage1 .menu {
+            list-style: none;
+            float: right;
+        }
+
+        .menu li {
+            display: inline-block;
+            line-height: 70px;
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0 20px;
+            transition: .4s;
+            color: white;
+        }
+
+        .show-btn,
+        .hide-btn {
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            margin: 0px 15px;
+            display: none;
+        }
+
+        .show-btn {
+            float: right;
+        }
+
+        #chk {
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+
+        @media (max-width: 820px) {
+            .section2 {
+                font-size: 90px;
+                /* font-family: 'Bangers', cursive; */
+                text-align: center;
+                margin-top: 25vh;
+            }
+
+            .section1 {
+                font-size: 40px;
+                /* font-family: 'Bangers', cursive; */
+                text-align: center;
+                margin-top: 5vh;
+                /* margin-left: 7vw; */
+                color: black;
+            }
+
+            .show-btn,
+            .hide-btn {
+                display: block;
+            }
+
+            .menu li {
+                display: block;
+                padding: 20px 0;
+            }
+
+            .li a {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 50%;
+                /* height: 100vh; */
+                background-color: black;
+                text-align: center;
+                transition: .7s;
+                line-height: normal;
+                /* z-index: -10; */
+            }
+
+            .hide-btn {
+                position: absolute;
+                right: 5px;
+                top: 10px;
+            }
+
+            #chk:checked~.menu {
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    
+    </div>
+
+</body>
+
+</html>
